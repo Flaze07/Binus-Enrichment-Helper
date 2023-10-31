@@ -6,7 +6,8 @@
   "description": "Insert clock out and clock in.",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/border-48.png",
+    "64": "icons/border-64.png"
   },
 
   "browser_action": {
