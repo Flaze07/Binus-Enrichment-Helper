@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Enrichment Helper",
+  "version": "1.0",
+
+  "description": "Insert clock out and clock in.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.binus.ac.id/*"],
+      "js": ["enrichment.js"]
+    }
+  ],
+
+  "permissions": ["activeTab", "storage"]
+}
